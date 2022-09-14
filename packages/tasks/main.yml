@@ -1,0 +1,8 @@
+---
+- name: instaluj taski
+  package:
+    name:
+      - unzip
+      - net-tools
+    state: present
+# tasks file for packages
