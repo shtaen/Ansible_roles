@@ -8,7 +8,9 @@
 - name: Add the user 'panda' and primary group of 'panda'
   ansible.builtin.user:
     name: panda
-    group: panda, sudo
+    group: 
+      - panda
+      - sudo
     shell: /bin/bash
 
 - name: copy authorised_key
