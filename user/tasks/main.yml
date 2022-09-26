@@ -8,7 +8,7 @@
 - name: Add the user 'panda' and primary group of 'panda'
   ansible.builtin.user:
     name: panda
-    group: 
+    groups: 
       - panda
       - sudo
     shell: /bin/bash
